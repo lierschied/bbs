@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/Schule"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<levels>
+		<level name="IntelliJ IDEA GridLayout" value="project"/>
+		<level name="org.jfree:jfreechart:1.5.0" value="project"/>
+	</levels>
+</component>
