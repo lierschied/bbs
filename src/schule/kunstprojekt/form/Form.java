@@ -13,8 +13,12 @@ public abstract class Form {
     /**
      * The Color.
      */
-    public Color color;
-
+    public Color color = Color.red;
+    /**
+     * The Stroke.
+     */
+    public float stroke = 1.0F;
+    
     /**
      * Draw.
      *

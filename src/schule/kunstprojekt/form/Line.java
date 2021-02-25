@@ -5,7 +5,7 @@ import java.awt.*;
 /**
  * The type Line.
  */
-public class Line extends Form{
+public class Line {
     /**
      * The Start.
      */
@@ -14,6 +14,8 @@ public class Line extends Form{
      * The End.
      */
     public Point end;
+    public Color color;
+    public float stroke;
 
     /**
      * Instantiates a new Line.
@@ -26,10 +28,15 @@ public class Line extends Form{
         this.end = end;
     }
 
-    @Override
+    /**
+     * Draw.
+     *
+     * @param g the g
+     */
     public void draw(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
-        g2d.setColor(Color.red);
+        g2d.setColor(this.color);
+        g2d.setStroke(new BasicStroke(this.stroke));
         g2d.drawLine(start.x, start.y, end.x, end.y);
     }
 

@@ -28,14 +28,20 @@ public class Main extends JFrame {
 
         Point startSquare = new Point(100, 150);
         Square square = new Square(startSquare,40, 80);
+        square.stroke = 2;
+        square.color = Color.red;
         square.draw(g);
 
         Point startQuadrat = new Point(150, 150);
         Quadrat quadrat = new Quadrat(startQuadrat, 40);
+        quadrat.stroke = 6;
+        quadrat.color = Color.blue;
         quadrat.draw(g);
 
         Point startTriangle = new Point(200, 150);
         Triangle triangle = new Triangle(startTriangle, 40, 40, 40);
+        triangle.stroke = 10F;
+        triangle.color = Color.green;
         triangle.draw(g);
     }
 

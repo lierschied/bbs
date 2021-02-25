@@ -4,6 +4,8 @@ import schule.kunstprojekt.form.*;
 import schule.kunstprojekt.form.Point;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Triangle extends Form {
 
@@ -23,8 +25,20 @@ public class Triangle extends Form {
 
     @Override
     public void draw(Graphics g) {
-        this.lineA.draw(g);
-        this.lineB.draw(g);
-        this.lineC.draw(g);
+        List<Line> lines = this.getLines();
+        for (Line line : lines) {
+            line.color = this.color;
+            line.stroke = this.stroke;
+            line.draw(g);
+        }
+    }
+
+    public java.util.List<Line> getLines() {
+        List<Line> lines = new ArrayList<Line>();
+        lines.add(this.lineA);
+        lines.add(this.lineB);
+        lines.add(this.lineC);
+
+        return lines;
     }
 }
