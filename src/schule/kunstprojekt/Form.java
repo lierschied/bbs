@@ -1,4 +1,6 @@
-package schule.kunstprojekt.form;
+package schule.kunstprojekt;
+
+import schule.kunstprojekt.Point;
 
 import java.awt.*;
 

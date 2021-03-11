@@ -1,9 +1,9 @@
 package schule.kunstprojekt;
 
-import schule.kunstprojekt.form.Point;
-import schule.kunstprojekt.form.square.Quadrat;
-import schule.kunstprojekt.form.square.Square;
-import schule.kunstprojekt.form.triangle.Triangle;
+import schule.kunstprojekt.form.square.Rectangle;
+import schule.kunstprojekt.form.square.rectangle.Quadrat;
+import schule.kunstprojekt.form.Square;
+import schule.kunstprojekt.form.Triangle;
 
 import javax.swing.*;
 import java.awt.*;
@@ -27,7 +27,7 @@ public class Main extends JFrame {
         super.paint(g);
 
         Point startSquare = new Point(100, 150);
-        Square square = new Square(startSquare,40, 80);
+        Square square = new Rectangle(startSquare,40, 80);
         square.stroke = 2;
         square.color = Color.red;
         square.draw(g);

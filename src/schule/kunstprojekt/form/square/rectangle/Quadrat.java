@@ -1,8 +1,9 @@
-package schule.kunstprojekt.form.square;
+package schule.kunstprojekt.form.square.rectangle;
 
-import schule.kunstprojekt.form.Point;
+import schule.kunstprojekt.Point;
+import schule.kunstprojekt.form.square.Rectangle;
 
-public class Quadrat extends Square
+public class Quadrat extends Rectangle
 {
     /**
      * Instantiates a new Square.

@@ -1,4 +1,4 @@
-package schule.kunstprojekt.form;
+package schule.kunstprojekt;
 
 /**
  * The type Point.

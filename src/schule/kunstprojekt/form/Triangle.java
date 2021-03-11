@@ -1,7 +1,8 @@
-package schule.kunstprojekt.form.triangle;
+package schule.kunstprojekt.form;
 
-import schule.kunstprojekt.form.*;
-import schule.kunstprojekt.form.Point;
+import schule.kunstprojekt.Form;
+import schule.kunstprojekt.Line;
+import schule.kunstprojekt.Point;
 
 import java.awt.*;
 import java.util.ArrayList;

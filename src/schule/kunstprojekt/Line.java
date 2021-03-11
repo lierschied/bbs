@@ -1,4 +1,6 @@
-package schule.kunstprojekt.form;
+package schule.kunstprojekt;
+
+import schule.kunstprojekt.Point;
 
 import java.awt.*;
 
@@ -9,11 +11,11 @@ public class Line {
     /**
      * The Start.
      */
-    public Point start;
+    public schule.kunstprojekt.Point start;
     /**
      * The End.
      */
-    public Point end;
+    public schule.kunstprojekt.Point end;
     public Color color;
     public float stroke;
 
@@ -23,7 +25,7 @@ public class Line {
      * @param start the start
      * @param end   the end
      */
-    public Line(Point start, Point end) {
+    public Line(schule.kunstprojekt.Point start, Point end) {
         this.start = start;
         this.end = end;
     }
